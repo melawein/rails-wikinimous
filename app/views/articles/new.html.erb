@@ -1,13 +1,23 @@
 <h1>New article</h1>
 
+<div class="form-title">
+
 <%= form_for(@article) do |f|  %>
 <%= f.label :title %>
 <%= f.text_field :title %>
+</div>
+
+
+<div class="form-content">
 
 <%= f.label :content %>
 <%= f.text_field :content %>
+</div>
 
+
+<div class="button">
 <%= f.submit %>
+</div>
 
 <% end %>
 
